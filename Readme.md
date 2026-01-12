@@ -1,4 +1,5 @@
 Github Copilot Requests Check
+
 A plugin for the [Flow launcher](https://github.com/Flow-Launcher/Flow.Launcher).
 
 <img width="775" height="215" alt="image" src="https://github.com/user-attachments/assets/5416dc0c-21e9-4177-94d2-a3540b05c327" />
