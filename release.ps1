@@ -1,0 +1,2 @@
+dotnet publish Flow.Launcher.Plugin.GithubCopilotRequestsCheck -c Release -r win-x64 --no-self-contained
+Compress-Archive -LiteralPath Flow.Launcher.Plugin.GithubCopilotRequestsCheck/bin/Release/win-x64/publish -DestinationPath Flow.Launcher.Plugin.GithubCopilotRequestsCheck/bin/GithubCopilotRequestsCheck.zip -Force

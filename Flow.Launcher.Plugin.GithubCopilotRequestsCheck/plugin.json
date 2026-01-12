@@ -1,0 +1,12 @@
+{
+    "ID": "3F9C70C180814379B3C3DCF1A333F832",
+    "ActionKeyword": "ghr",
+    "Name": "GithubCopilotRequestsCheck",
+    "Description": "Checks to see how many Github Copilot requests the user has left for the month",
+    "Author": "Adam Marciniec",
+    "Version": "1.0.0",
+    "Language": "csharp",
+    "Website": "https://github.com/Echostorm44/GithubCopilotRequestsCheck",
+    "IcoPath": "icon.png",
+    "ExecuteFileName": "Flow.Launcher.Plugin.GithubCopilotRequestsCheck.dll"
+}
