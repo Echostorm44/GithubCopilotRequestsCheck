@@ -17,14 +17,21 @@
                  Margin="0,0,0,15" Padding="5"/>
         
         <TextBlock Text="Monthly Request Quota:" Margin="0,0,0,5"/>
-        <ComboBox SelectedValue="{Binding Settings.MonthlyQuota, Mode=TwoWay}" 
-                  SelectedValuePath="Tag"
-                  Margin="0,0,0,5">
-            <ComboBoxItem Tag="50" Content="50 (Copilot Free)"/>
-            <ComboBoxItem Tag="300" Content="300 (Copilot Pro / Business)"/>
-            <ComboBoxItem Tag="1000" Content="1000 (Copilot Enterprise)"/>
-            <ComboBoxItem Tag="1500" Content="1500 (Copilot Pro+)"/>
-        </ComboBox>
+        <StackPanel Orientation="Horizontal" Margin="0,0,0,5">
+            <ComboBox x:Name="QuotaComboBox" 
+                      SelectionChanged="QuotaComboBox_SelectionChanged"
+                      Width="200">
+                <ComboBoxItem Tag="50" Content="50 (Copilot Free)"/>
+                <ComboBoxItem Tag="300" Content="300 (Copilot Pro / Business)"/>
+                <ComboBoxItem Tag="1000" Content="1000 (Copilot Enterprise)"/>
+                <ComboBoxItem Tag="1500" Content="1500 (Copilot Pro+)"/>
+                <ComboBoxItem Tag="0" Content="Custom"/>
+            </ComboBox>
+            <TextBox x:Name="CustomQuotaTextBox" 
+                     Text="{Binding Settings.MonthlyQuota, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                     Width="80" Margin="10,0,0,0" Padding="5"
+                     Visibility="Collapsed"/>
+        </StackPanel>
         <TextBlock Text="Select your GitHub Copilot plan's monthly premium request allowance." 
                    FontSize="13" Foreground="Gray" Margin="0,0,0,15"/>
         
