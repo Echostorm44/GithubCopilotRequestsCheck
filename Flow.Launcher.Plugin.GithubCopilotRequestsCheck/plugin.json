@@ -4,7 +4,7 @@
     "Name": "GithubCopilotRequestsCheck",
     "Description": "Checks to see how many Github Copilot requests the user has left for the month",
     "Author": "Adam Marciniec",
-    "Version": "1.0.0",
+    "Version": "1.0.2",
     "Language": "csharp",
     "Website": "https://github.com/Echostorm44/GithubCopilotRequestsCheck",
     "IcoPath": "icon.png",
